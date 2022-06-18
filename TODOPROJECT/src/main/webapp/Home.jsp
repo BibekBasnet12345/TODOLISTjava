@@ -1,58 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Register Form</title>
-<style>
-.container {
-	width: 35%;
-	border: 2px solid black;
-	margin: auto;
-	padding: 20px;
-	font-size: 20px;
-}
+<title>Registration Page</title>
+<!-- I used Materlize CSS just to look COOL with the help of documentation -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-#myform table tr td input {
-	font-size: 20px;
-}
-</style>
+     
 </head>
-<body>
-	<h1>You Have to Make Account before Using TODO list</h1>
-	<div class="container">
-		<h1>Registration Form</h1>
-		<form id="myform" action="loginservlet" method="post">
-			<table>
-				<tr>
-					<td>Enter the ID:</td>
-					<td><input required type="text" autocomplete="off"
-						name="user_id" placeholder="ID here"></td>
-				</tr>
-				<tr>
-					<td>Enter your Name:</td>
-					<td><input required type="text" autocomplete="off"
-						name="user_name" placeholder="Name here"></td>
-				</tr>
-				<tr>
-					<td>Enter your Email:</td>
-					<td><input required type="email" autocomplete="off"
-						name="user_email" placeholder="Email here"></td>
-				</tr>
-				<tr>
-					<td>Enter your password:</td>
-					<td><input required type="password" name="user_password"
-						placeholder="Password here"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td><button type="submit">Register</button></td>
-				</tr>
-			</table>
+<body style="background:url(background.jpg);background-size:cover; background-attachment:fixed;">
+
+<div class="container">
+    <div class="row">
+       <div class="col m6 offset-m3">
+           <div class="card grey lighten-3">
+           <div class="card-content">
+           <h3 style="margin-top:10px;"class="center-align">Register Here</h3>
+           
+           <div class="form center-align">
+           <form  action="loginservlet" method="post">
+			
+			
+					<input required type="text" autocomplete="off"
+						name="user_id" placeholder="Enter the ID here">
+				
+			       <input required type="text" autocomplete="off"
+						name="user_name" placeholder="Enter your Name Here">
+					
+					<input required type="email" autocomplete="off"
+						name="user_email" placeholder="Enter your Email here">
+			
+			
+					<input required type="password" name="user_password"
+						placeholder="Enter your Password here">
+				
+					
+					<button type="submit" class="btn purple accent-4">Register</button>
+			
 		</form>
 		Already Have Account:
-		<button type="reset">
-			<a href="login.jsp" class="btn btn-primary">SignUp</a>
-		</button>
-	</div>
+		<button type="button"  class="red accent-3"><a href="login.jsp">SignUp</a></button>
+           </div>
+           </div>
+           </div>
+
+       </div>
+
+     </div>
+
+</div>
 </body>
 </html>
