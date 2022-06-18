@@ -3,34 +3,55 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-  	<servlet-name>savenoteservlet</servlet-name> 	
-  	<servlet-class>com.servlets.savenoteservlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>deleteservlet</servlet-name>
-  	<display-name>deleteservlet</display-name>
-  	<description></description>
-  	<servlet-class>com.servlets.deleteservlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>editnoteservlet</servlet-name>
-  	<display-name>editnoteservlet</display-name>
-  	<description></description>
-  	<servlet-class>com.servlets.editnoteservlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>savenoteservlet</servlet-name>
-  	<url-pattern>/savenoteservlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>deleteservlet</servlet-name>
-  	<url-pattern>/deleteservlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>editnoteservlet</servlet-name>
-  	<url-pattern>/editnoteservlet</url-pattern>
-  </servlet-mapping>
-  
+	<welcome-file-list>
+		<welcome-file>Home.jsp</welcome-file>
+	</welcome-file-list>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>savenoteservlet</servlet-name>
+		<servlet-class>com.servlets.savenoteservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>savenoteservlet</servlet-name>
+		<url-pattern>/savenoteservlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>deleteservlet</servlet-name>
+		<servlet-class>com.servlets.deleteservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteservlet</servlet-name>
+		<url-pattern>/deleteservlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editnoteservlet</servlet-name>
+		<servlet-class>com.servlets.editnoteservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editnoteservlet</servlet-name>
+		<url-pattern>/editnoteservlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>loginservlet</servlet-name>
+		<servlet-class>com.servlets.loginservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginservlet</servlet-name>
+		<url-pattern>/loginservlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Checks_Login</servlet-name>
+		<servlet-class>com.servlets.Checks_Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Checks_Login</servlet-name>
+		<url-pattern>/Checks_Login</url-pattern>
+	</servlet-mapping>
+
+
 </web-app>

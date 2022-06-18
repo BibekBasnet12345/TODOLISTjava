@@ -46,7 +46,7 @@ public class savenoteservlet extends HttpServlet {
 			e.printStackTrace();
 		}
     	
-    	System.out.println("hello");
+    	System.out.println("hello");//console ma print garxa
     }
     
    
