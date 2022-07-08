@@ -31,8 +31,7 @@
 			</div>
 			<div class="col-12">
 				<%
-    Session se=factory.getFactory().openSession();
-    
+                   Session se=factory.getFactory().openSession();
     //HQL query to select all from table
     String hql="FROM Todo";
     Query q=se.createQuery(hql);
